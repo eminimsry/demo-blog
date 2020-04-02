@@ -17,6 +17,7 @@ import java.util.Arrays;
 public class LogAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    //这是不一一样的啊
     @Pointcut("execution(* com.demo.blog.controller.*.*(..))")
     public void log() {
     }
