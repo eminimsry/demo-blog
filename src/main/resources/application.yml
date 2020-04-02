@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  thymeleaf:
+    mode: HTMl
+  profiles:
+    active: dev
+    messages:
+      #国际化配置文件集中存放的路径
+      basename: i18n/messages
+
+comment.avatar: /images/avatar.png

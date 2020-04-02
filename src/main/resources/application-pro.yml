@@ -1,0 +1,18 @@
+server:
+  port: 80 #生产环境8081端口
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/blog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    data-username: root
+    data-password: 123456
+  jpa:
+    hibernate:
+      ddl-auto: none #自动更新匹配数据库表结构
+    show-sql: true #输出sql日志到console控制台
+logging:
+  level:
+    root: warn
+    com.wangyang: info
+  file: log/blog-pro.log
+

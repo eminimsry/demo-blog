@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.14.15.116:3306/Blog?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none #自动更新匹配数据库表结构
+  mvc:
+    favicon:
+      enabled: true
+logging:
+  level:
+    root: info
+    com.demo.blog: debug
+  file: log/blog-dev.log
+
+
+
