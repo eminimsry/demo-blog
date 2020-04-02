@@ -17,6 +17,7 @@ import java.util.Arrays;
 public class LogAspect {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    //为啥拉不下来
     @Pointcut("execution(* com.demo.blog.controller.*.*(..))")
     public void log() {
     }
